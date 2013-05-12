@@ -1,0 +1,7 @@
+# This folder does not require access over HTTP
+# (the following directive denies access by default)
+RewriteEngine On
+RewriteRule ^(answer_1.json)$ - [L]
+<files "*.json">
+deny from all
+</files>
